@@ -1,4 +1,4 @@
-// Nome: Seu Nome Completo
+// Nome: Gustavo Decker Couto
 namespace AcademiaDoZe.Domain.ValueObjects;
 
 public record Cpf

@@ -1,4 +1,4 @@
-// Nome: Seu Nome Completo
+// Gustavo Decker Couto
 namespace AcademiaDoZe.Domain.ValueObjects;
 
 public record Arquivo

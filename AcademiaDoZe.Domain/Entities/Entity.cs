@@ -1,4 +1,4 @@
-// Nome: Gustavo Decker Couto
+// Gustavo Decker Couto
 namespace AcademiaDoZe.Domain.Entities;
 
 public abstract class Entity
