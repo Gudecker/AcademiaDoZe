@@ -5,7 +5,7 @@ using AcademiaDoZe.Domain.ValueObjects;
 
 namespace AcademiaDoZe.Domain.Entities;
 
-public class Logradouro
+public class Logradouro : IAggregateRoot
 {
     public int Id { get; private set; }
     public string Nome { get; private set; }

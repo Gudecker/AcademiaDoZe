@@ -1,15 +1,17 @@
 // Gustavo Decker Couto
+using AcademiaDoZe.Domain.Common;
+
 namespace AcademiaDoZe.Domain.Entities;
 
-public class AcessoColaborador : Entity
+public class AcessoColaborador : Entity, IAggregateRoot
 {
-    public Colaborador Colaborador { get; private set; }
+    public int ColaboradorId { get; private set; }
     public DateTime DataHoraEntrada { get; private set; }
     public DateTime? DataHoraSaida { get; private set; }
 
-    public AcessoColaborador(int id, Colaborador colaborador, DateTime dataHoraEntrada, DateTime? dataHoraSaida = null) : base(id)
+    public AcessoColaborador(int id, int colaboradorId, DateTime dataHoraEntrada, DateTime? dataHoraSaida = null) : base(id)
     {
-        Colaborador = colaborador;
+        ColaboradorId = colaboradorId;
         DataHoraEntrada = dataHoraEntrada;
         DataHoraSaida = dataHoraSaida;
     }
